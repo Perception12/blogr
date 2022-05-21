@@ -1,0 +1,139 @@
+body, html {
+    font-size: 16px;
+    font-family: 'Overpass', sans-serif;
+    line-height: 1.6;
+    color: hsl(237, 17%, 21%);
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none !important;
+    text-decoration: none !important;
+    list-style-type: none !important;
+}
+
+header {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(to bottom right, hsla(13, 100%, 72%, 0.9), hsla(353, 100%, 62%, 0.9));
+    border-bottom-left-radius: 150px;
+    box-sizing: border-box;
+}
+
+.image {
+    position: absolute;
+    width: 200%;
+    left: -25%;
+    height: 100%;
+    background-image: url(./images/bg-pattern-intro-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    z-index: -999;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+
+header .logo {
+    float: left;
+    font-size: 3.5em;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    padding: 20px;
+    margin-left: -30%;
+    text-align: center;
+}
+
+header ul {
+    margin-top: 40px;
+}
+
+header ul li {
+    cursor: pointer;
+}
+
+header ul.menu-left {
+    float: left;
+    margin-left: -5%;
+}
+
+header ul.menu-left li {
+    display: inline-block;
+    color: hsl(0, 0%, 100%);
+    padding: 20px;
+    text-align: center;
+}
+
+header ul.menu-right {
+    float: right;
+    margin-right: -25%;
+}
+
+header ul.menu-right li{
+    display: inline-block;
+    padding: 20px; 
+}
+
+header ul.menu-right li a {
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+header .cta {
+    border-radius: 2em;
+    padding: 1em 3em;
+}
+
+header ul.menu-right li a.signup {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(356, 100%, 66%);
+}
+
+
+header ul.menu-right::after {
+    clear: both;
+    content: '';
+}
+
+header .intro {
+    color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+header .intro h1 {
+    font-size: 4em;
+    font-weight: 600;
+}
+
+header .intro p {
+    margin-bottom: 50px;
+}
+
+header .intro a.start {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(356, 100%, 66%);
+    margin-right: 25px;
+}
+
+header .intro a.learn-more {
+    color: hsl(0, 0%, 100%);
+    border:2px solid hsl(0, 0%, 100%);
+}
+
+
+
+
+
