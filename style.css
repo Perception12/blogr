@@ -2,7 +2,7 @@ body, html {
     font-size: 16px;
     font-family: 'Overpass', sans-serif;
     line-height: 1.6;
-    color: hsl(237, 17%, 21%);
+    color: hsl(207, 13%, 34%);
     overflow-x: hidden;
 }
 
@@ -17,22 +17,25 @@ body, html {
 header {
     position: relative;
     margin: 0;
+    overflow: hidden;
     width: 100%;
     height: 70vh;
-    background: linear-gradient(to bottom right, hsla(13, 100%, 72%, 0.9), hsla(353, 100%, 62%, 0.9));
     border-bottom-left-radius: 150px;
+    background-image: url('./images/bg-pattern-intro-desktop.svg');
+    background-position-x: 15%;
+    background-position-y: -80%;
     box-sizing: border-box;
 }
 
-.image {
+
+header .overlay {
     position: absolute;
-    width: 200%;
-    left: -25%;
+    width: 100%;
     height: 100%;
-    background-image: url(./images/bg-pattern-intro-desktop.svg);
-    background-size: cover;
-    background-position: center;
-    z-index: -999;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to bottom right, hsla(13, 100%, 72%, 0.9), hsl(353, 100%, 62%));
+    z-index: -99;
 }
 
 .container {
@@ -45,11 +48,10 @@ header {
 
 header .logo {
     float: left;
-    font-size: 3.5em;
-    font-weight: 600;
+    margin-top: 20px;
     color: hsl(0, 0%, 100%);
-    padding: 20px;
-    margin-left: -30%;
+    padding: 25px;
+    margin-left: -25%;
     text-align: center;
 }
 
@@ -98,10 +100,36 @@ header ul.menu-right li a.signup {
     color: hsl(356, 100%, 66%);
 }
 
+header ul.menu-right li a.signup:hover {
+    background: hsl(355, 100%, 74%);
+    color:hsl(0, 0%, 100%);
+}
 
 header ul.menu-right::after {
     clear: both;
     content: '';
+}
+
+header ul.menu-left .dropdown {
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    line-height: 2em;
+    border-radius: 5px;
+    background: hsl(0, 0%, 100%);
+    color: hsl(237, 17%, 21%);
+    font-weight: 300;
+    padding: 20px 40px;
+    box-shadow: hsla(237, 17%, 21%, 0.35) 0px 5px 15px;
+    box-sizing: border-box;
+}
+
+header ul.menu-left .dropdown a {
+    display: block;
+}
+
+header ul.menu-left .dropdown a:hover {
+    font-weight: bold;
 }
 
 header .intro {
@@ -128,12 +156,20 @@ header .intro a.start {
     margin-right: 25px;
 }
 
+header .intro a.start:hover {
+    background: hsl(355, 100%, 74%);
+    color:hsl(0, 0%, 100%);
+}
+
 header .intro a.learn-more {
     color: hsl(0, 0%, 100%);
     border:2px solid hsl(0, 0%, 100%);
 }
 
-
+header .intro a.learn-more:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(356, 100%, 66%);
+}
 
 
 
