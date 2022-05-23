@@ -10,7 +10,7 @@ body, html {
     margin: 0;
     padding: 0;
     outline: none !important;
-    text-decoration: none !important;
+    text-decoration: none;
     list-style-type: none !important;
 }
 
@@ -73,6 +73,12 @@ header ul.menu-left li {
     color: hsl(0, 0%, 100%);
     padding: 20px;
     text-align: center;
+}
+
+header ul.menu-left  li .up-arrow {
+    display: none;
+    width: 9px;
+    margin-bottom: -7px;
 }
 
 header ul.menu-right {
