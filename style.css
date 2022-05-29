@@ -1,4 +1,4 @@
-body, html {
+body, html{
     font-size: 16px;
     font-family: 'Overpass', sans-serif;
     line-height: 1.6;
@@ -40,7 +40,7 @@ header .overlay {
 
 .container {
     width: 100%;
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -123,8 +123,6 @@ header ul.menu-left .dropdown {
     line-height: 2em;
     border-radius: 5px;
     background: hsl(0, 0%, 100%);
-    color: hsl(237, 17%, 21%);
-    font-weight: 300;
     padding: 20px 40px;
     box-shadow: hsla(237, 17%, 21%, 0.35) 0px 5px 15px;
     box-sizing: border-box;
@@ -132,6 +130,8 @@ header ul.menu-left .dropdown {
 
 header ul.menu-left .dropdown a {
     display: block;
+    color: hsl(237, 17%, 21%);
+    font-weight: 300;
 }
 
 header ul.menu-left .dropdown a:hover {
@@ -154,6 +154,7 @@ header .intro h1 {
 
 header .intro p {
     margin-bottom: 50px;
+    font-size: 1.2em;
 }
 
 header .intro a.start {
@@ -177,5 +178,58 @@ header .intro a.learn-more:hover {
     color: hsl(356, 100%, 66%);
 }
 
+section#about{
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 10%;
+    box-sizing: border-box;
+    line-height: 2em;
+    overflow-y: hidden;
+}
 
+.wrapper { 
+    width: 100%;
+    margin: 0 auto;
+}
+
+section h1 {
+    text-align: center;
+    color: hsl(208, 49%, 24%);
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 2.5em;
+}
+
+section .description {
+    margin-bottom: 2.5em;
+    padding: 30px;
+}
+
+section .about-left {
+    float: left;
+    width: 50%;
+}
+
+section .about-left h2 {
+    color: hsl(208, 49%, 24%);
+    font-size: 2em;
+    margin-bottom: 1.5em;
+}
+
+section .about-left p {
+    font-size: 1.2em;
+}
+
+
+section .about-right {
+    position: absolute;
+    right: -13%;
+    top: 10%;
+    width: 50%;
+}
+
+section .about-right .editor {
+    width: 100%;
+}
 
