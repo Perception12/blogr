@@ -40,8 +40,13 @@ header .overlay {
 
 .container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
+}
+
+nav {
+    margin: 0 auto;
+    width: 100%;
 }
 
 
@@ -53,6 +58,10 @@ header .logo {
     padding: 25px;
     margin-left: -25%;
     text-align: center;
+}
+
+header .logo img {
+    width: 130px;
 }
 
 header ul {
@@ -154,7 +163,8 @@ header .intro h1 {
 
 header .intro p {
     margin-bottom: 50px;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    font-weight: 300;
 }
 
 header .intro a.start {
@@ -178,14 +188,14 @@ header .intro a.learn-more:hover {
     color: hsl(356, 100%, 66%);
 }
 
-section#about{
+section {
     width: 100%;
     position: relative;
     margin: 0;
     padding: 10%;
     box-sizing: border-box;
     line-height: 2em;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 .wrapper { 
