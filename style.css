@@ -285,3 +285,43 @@ header .intro a.learn-more:hover {
     font-size: 2em;
     margin-bottom: 1.5em;
 }
+
+#second-about {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    margin-top: -8%;
+    padding: 10%;
+    box-sizing: border-box;
+    line-height: 2em;
+    overflow: hidden;
+}
+
+#second-about .second-about-left {
+    position: absolute;
+    left: -13%;
+    top: 10%;
+    width: 50%;
+}
+
+#second-about .description {
+    margin-bottom: 2.5em;
+    padding: 30px;
+}
+
+#second-about .second-about-left .laptop {
+    width: 100%;
+}
+
+
+#second-about .second-about-right {
+    float: right;
+    width: 50%;
+    font-size: 1.2em;
+}
+
+#second-about .second-about-right h2 {
+    color: hsl(208, 49%, 24%);
+    font-size: 2em;
+    margin-bottom: 1.5em;
+}
