@@ -188,7 +188,7 @@ header .intro a.learn-more:hover {
     color: hsl(356, 100%, 66%);
 }
 
-section {
+#about {
     width: 100%;
     position: relative;
     margin: 0;
@@ -203,7 +203,7 @@ section {
     margin: 0 auto;
 }
 
-section h1 {
+#about h1 {
     text-align: center;
     color: hsl(208, 49%, 24%);
     font-size: 3em;
@@ -211,35 +211,77 @@ section h1 {
     margin-bottom: 2.5em;
 }
 
-section .description {
+#about .description {
     margin-bottom: 2.5em;
     padding: 30px;
 }
 
-section .about-left {
+#about .about-left {
     float: left;
     width: 50%;
+    font-size: 1.2em;
 }
 
-section .about-left h2 {
+#about .about-left h2 {
     color: hsl(208, 49%, 24%);
     font-size: 2em;
     margin-bottom: 1.5em;
 }
 
-section .about-left p {
-    font-size: 1.2em;
-}
 
-
-section .about-right {
+#about .about-right {
     position: absolute;
     right: -13%;
     top: 10%;
     width: 50%;
 }
 
-section .about-right .editor {
+#about .about-right .editor {
     width: 100%;
 }
 
+#banner {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+}
+
+#banner .background {
+    position: absolute;
+    overflow-y: hidden;
+    left: 0;
+    margin: auto 0;
+    width: 100%;
+    padding: 5% 20%;
+    box-sizing: border-box;
+    border-bottom-left-radius: 150px;
+    border-top-right-radius: 150px;
+    background: linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    color: hsl(0, 0%, 100%);
+}
+
+#banner > img {
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    z-index: 2;
+}
+
+#banner .banner-left {
+    position: absolute;
+    top: -120%;
+    left: 0;
+    float: left;
+    width: 50%;
+}
+
+#banner .banner-right {
+    float: right;
+    width: 50%;
+    font-size: 1.2em;
+}
+
+#banner .banner-right h2 {
+    font-size: 2em;
+    margin-bottom: 1.5em;
+}
