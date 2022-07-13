@@ -18,7 +18,7 @@ header {
     position: relative;
     margin: 0;
     overflow: hidden;
-    width: 100%;
+    width: 85%;
     height: 70vh;
     border-bottom-left-radius: 150px;
     background-image: url('./images/bg-pattern-intro-desktop.svg');
